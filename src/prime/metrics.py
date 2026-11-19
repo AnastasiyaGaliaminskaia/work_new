@@ -5,7 +5,6 @@
 и что приходит из внешнего API.
 """
 
-
 def revenue(payments: list[dict]) -> float:
     """Выручка: сумма списаний."""
     return round(sum(p["amount"] for p in payments if p["status"] == "success"), 2)
